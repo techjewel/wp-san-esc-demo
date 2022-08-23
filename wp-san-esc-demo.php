@@ -24,7 +24,7 @@ class DataSanEscDemo
 
     public function init()
     {
-        add_shortcode('fluent_san_esc_demo', array($this, 'showDemo'));
+        add_shortcode('wp_san_esc_demo', array($this, 'showDemo'));
         add_action('wp_ajax_fluent_demo_parser', [$this, 'handleAjax']);
         add_action('wp_ajax_nopriv_fluent_demo_parser', [$this, 'handleAjax']);
     }
